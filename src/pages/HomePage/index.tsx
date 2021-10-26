@@ -8,7 +8,6 @@ import "./HomePage.scss";
 export const HomePage = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   const [textSearch, setTextSearch] = useState<string>("");
-  const handleOpenCreateModal = () => setShowOverlay(true);
 
   return (
     <main className="home-page">
