@@ -1,0 +1,74 @@
+@import "../../variables";
+
+.contact-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 70vh;
+  justify-content: center;
+  padding: 1rem;
+  &__actions {
+    align-items: center;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    height: 2rem;
+    width: 10rem;
+  }
+  &__avatar {
+    border-radius: 50%;
+    height: $contact-medium-avatar-height;
+    object-fit: cover;
+    width: $contact-medium-avatar-height;
+  }
+  &__button {
+    align-items: center;
+    appearance: none;
+    background-color: $error;
+    border: none;
+    border-radius: $border-radius;
+    color: $light;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    gap: 0.5rem;
+    height: $button-height;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+  &__link {
+    align-items: center;
+    background-color: $primary;
+    border-radius: $border-radius;
+    color: $dark;
+    display: flex;
+    height: $button-height;
+    margin: 0;
+    padding: 0.5rem;
+    text-decoration: none;
+    &:active,
+    &:visited {
+      color: $primary;
+      color: $dark;
+    }
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+  &__message {
+    &--error {
+      color: $error;
+    }
+    &--info {
+      color: $primary;
+    }
+  }
+  &__name {
+    margin: 0;
+    padding: 0;
+  }
+}
