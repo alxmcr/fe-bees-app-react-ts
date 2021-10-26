@@ -31,7 +31,7 @@ export const useContacts = (textSearch: string = "", page: number = 5, limit: nu
         return function cancel() {
             abortController?.abort();
         };
-    }, [textSearch, page, limit])
+    }, [textSearch, page, limit, dispatch])
 
     const contacts: Contact[] = state.contacts;
     return { contacts, loadingContacts, errorContacts };
