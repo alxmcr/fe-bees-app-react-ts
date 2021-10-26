@@ -19,12 +19,11 @@ export const ContactsManager = ({ textSearch }: ContactsManagerProps) => {
       <div className="contacts-manager__body">
         {loadingContacts ? (
           <p className="contacts-manager__message">Loading...</p>
-        ) : null}
-        {!loadingContacts && !errorContacts ? (
-          <>
-            <ContactsTable contacts={contacts} />
-          </>
-        ) : null}
+        ) : !errorContacts ? (
+          <ContactsTable contacts={contacts} />
+        ) : (
+          <p>No hay contactos registrados.</p>
+        )}
       </div>
       <ContactsPagination
         page={page}
