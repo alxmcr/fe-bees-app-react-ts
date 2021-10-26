@@ -1,6 +1,6 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { ContactCreateFormProps } from "../../../@types/appPropsTypes";
-import { ContactsContext } from "../../../providers/ContactsProvider";
 import { addContactAction } from "../../../redux/actions/contactsActions";
 import { addContact } from "../../../services/contactsServices";
 import "./ContactCreateForm.scss";
@@ -8,7 +8,7 @@ import "./ContactCreateForm.scss";
 export const ContactCreateForm = ({
   setShowOverlay,
 }: ContactCreateFormProps) => {
-  const { dispatch } = useContext(ContactsContext);
+  const dispatch = useDispatch();
   const [photo, setPhoto] = useState<string>("");
   const [name, setName] = useState<string>("");
   const [description, setDescription] = useState<string>("");

@@ -1,11 +1,12 @@
-import { useContext, useEffect, useState } from "react";
-import { Contact } from "../@types/appTypes";
-import { ContactsContext } from "../providers/ContactsProvider";
+import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { ContactsState } from "../@types/appReduxTypes";
 import { fillContactsAction } from "../redux/actions/contactsActions";
 import { getContacts } from "../services/contactsServices";
 
 export const useContacts = (textSearch: string = "", page: number = 5, limit: number = 3) => {
-    const { state, dispatch } = useContext(ContactsContext);
+    const contacts = useSelector((state: ContactsState) => state.contacts);
+    const dispatch = useDispatch();
     const [loadingContacts, setLoadingContacts] = useState(false);
     const [errorContacts, setErrorContacts] = useState(false);
 
@@ -33,6 +34,5 @@ export const useContacts = (textSearch: string = "", page: number = 5, limit: nu
         };
     }, [textSearch, page, limit, dispatch])
 
-    const contacts: Contact[] = state.contacts;
     return { contacts, loadingContacts, errorContacts };
 }

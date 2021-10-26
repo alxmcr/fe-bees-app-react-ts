@@ -2,17 +2,17 @@ import { BrowserRouter } from "react-router-dom";
 import "./App.scss";
 import { AppRouting } from "./routes/AppRouting";
 import "./App.scss";
-import { ContactsProvider } from "./providers/ContactsProvider";
+import { ReduxProvider } from "./providers/ReduxProvider";
 
 function App() {
   return (
     <BrowserRouter>
-      <ContactsProvider>
+      <ReduxProvider>
         <h1 className="App__title">
           Test <strong>Beetrack</strong>
         </h1>
         <AppRouting />
-      </ContactsProvider>
+      </ReduxProvider>
     </BrowserRouter>
   );
 }

@@ -1,18 +1,18 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
+import { useDispatch } from "react-redux";
 import { Redirect, useHistory, useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import { ContactPageParams } from "../../@types/appRouterTypes";
 import { getContactIdFromParams } from "../../helpers/helpers";
 import { useContact } from "../../hooks/useContact";
-import { ContactsContext } from "../../providers/ContactsProvider";
 import { removeContactAction } from "../../redux/actions/contactsActions";
 import { removeContact } from "../../services/contactsServices";
 import "./ContactPage.scss";
 
 export const ContactPage = () => {
+  const dispatch = useDispatch();
   const history = useHistory();
   const params = useParams<ContactPageParams>();
-  const { dispatch } = useContext(ContactsContext);
   const [isRemoving, setIsRemoving] = useState<boolean>(false);
   const [hasErrorRemove, setHasErrorRemove] = useState<boolean>(false);
   const contactId = getContactIdFromParams(params);
