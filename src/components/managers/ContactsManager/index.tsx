@@ -6,7 +6,7 @@ import { ContactsTable } from "../ContactsTable";
 import "./ContactsManager.scss";
 
 export const ContactsManager = ({ textSearch }: ContactsManagerProps) => {
-  const limit = 3;
+  const limit = 5;
   const [page, setPage] = useState<number>(1);
   const { contacts, loadingContacts, errorContacts } = useContacts(
     textSearch,
