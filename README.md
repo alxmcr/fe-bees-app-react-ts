@@ -1,46 +1,88 @@
-# Getting Started with Create React App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Bees App
 
-## Available Scripts
+Es una aplicación web que permita el registro, eliminación, búsqueda de contactos y paginación de resultados.
 
-In the project directory, you can run:
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/desktop-version_b9coor.png)
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- Listar contactos
+- Listar contactos de forma paginada
+- Registrar contactos
+- Eliminar contactos
+  
+## Lessons Learned
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+I learned and practice more about CSS, React.js, and React Hooks.
+Yo aprendí y practiqué más acerca de React.js, TypeScript, React Hooks, and Redux.
 
-### `npm test`
+  
+## Run Locally
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clonar el proyecto
 
-### `npm run build`
+```bash
+  git clone https://github.com/alxmcr/bees-app
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Ir donde se encuentra el directorio del proyecto.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+  cd bees-app
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Install dependencies
 
-### `npm run eject`
+```bash
+  npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Iniciar el Frontend server
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+  npm run start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Extra: Iniciar Backend server
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+cd frontend-test
+npm install
+npm run start
+```
+ 
+## Environment Variables
 
-## Learn More
+Para arrancar el proyecto se necesita de variables de entorno(`.env`). Donde se puede, colocar en la raíz del proyecto: `bees-app/.env` (ver: `.env-sample`)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```
+REACT_APP_BACKEND_API_BASE_URL=http://localhost:4000
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Rutas Habilitadas
+
+- Inicio (`/`)
+- Contacto (`/contacts/:id`)
+  
+## Tech Stack
+
+HTML, CSS, Sass, JavaScript, Typescript, React.js, and Redux.
+
+## Screenshoots
+
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/desktop-version_b9coor.png)
+
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version_bkm85c.png)
+
+![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version-remove_hrnfbs.png)
+  
+## Authors
+
+- [Alejandro M. Coca Rojas (@alxmcr)](https://www.github.com/alxmcr)
+  
+## Feedback
+
+If you have any feedback, please reach out to us at amcocarojas@gmail.com.
+
+  
