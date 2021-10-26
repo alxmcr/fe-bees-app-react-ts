@@ -1,0 +1,47 @@
+@import "../../../variables";
+
+.card-contact {
+  background-color: $secondary;
+  box-sizing: content-box;
+  height: $card-height;
+  width: $card-create-contact-width;
+  &__body {
+    background-color: $secondary;
+    box-sizing: content-box;
+    padding: $padding-body-card;
+    height: $card-body-height;
+  }
+  &__button {
+    align-items: center;
+    appearance: none;
+    background-color: $primary;
+    border: none;
+    border-radius: $border-radius;
+    color: $light;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    gap: 0.5rem;
+    height: $button-height;
+    width: $button-height;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+  &__icon {
+    fill: $light;
+    &--primary {
+      fill: $primary;
+    }
+  }
+  &__header {
+    align-items: center;
+    border-bottom: 0.5px solid $border;
+    background-color: $light;
+    display: flex;
+    justify-content: space-between;
+    height: $card-header-height;
+    padding: $padding-body-card;
+  }
+}
