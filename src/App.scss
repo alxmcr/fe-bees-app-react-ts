@@ -1,0 +1,15 @@
+@import "./variables";
+
+.App {
+  min-height: 100vh;
+  padding: $padding-body;
+  &__title {
+    color: $tertiary;
+    font-weight: 500;
+    margin: 0;
+    padding: 1.5rem 2rem;
+    strong {
+      color: $text;
+    }
+  }
+}

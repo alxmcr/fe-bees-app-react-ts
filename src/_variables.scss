@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+/* Brand colors */
+$primary: #ffa100;
+$secondary: #F9F9F9;
+$tertiary: #949494;
+$border: #dfdfdf;
+$shadow: #2e212154;
+$dark: #000;
+$text: #524d4d;
+$light: #fff;
+$required: #f17272;
+$overlay: #000000b3;
+$error: #f17272;
+
+/* Typography */
+$font-family-headings: "Raleway", sans-serif;
+$font-family-body: "Lato", sans-serif;
+
+/* Font - Sizes */
+$font-size-base: 1rem;
+
+/* Height & Width */
+$button-height: 2.0625rem;
+$button-width: 10.3125rem;
+$contact-card-height: 4.375rem;
+$contact-card-width: 19.125rem;
+$input-search-height: 2.125rem;
+$input-search-width: 19.125rem;
+$textarea-height: 5rem;
+$textarea-width: 19.125rem;
+$form-create-height: 19.4375rem;
+$form-create-width: 28.6875rem;
+$card-header-height: 4.375rem;
+$card-header-width: 28.6875rem;
+$card-body-height: 18.75rem;
+$card-body-width: 28.6875rem;
+$card-height: 28.6875rem;
+$card-width: 28.6875rem;
+$card-contact-description-height: 3.625rem;
+$card-contact-height: 6rem;
+$card-contact-width: 19.5rem;
+$card-create-contact-width: 21.6875rem;
+$avatar-height: 2.5rem;
+$avatar-width: 2.5rem;
+$contact-medium-avatar-height: 10rem;
+$contact-medium-avatar-width: 10rem;
+$contacts-body-height: 18.5rem;
+$contacts-body-width: 18.75rem;
+$contacts-grid-body-height: 18.5rem;
+$contacts-grid-header: 3.1875rem;
+$contacts-grid-footer: 3.1875rem;
+$pagination-height: 3.5625rem;
+$contacts-manager-body-height: 15.375rem;
+
+/* Padding & margin */
+$padding-body: 2rem;
+$padding-body-card: 2.4375rem;
+
+/* Details */
+$border-radius: 0.25rem;
