@@ -1,0 +1,59 @@
+@import "../../../variables";
+
+.form-create {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__actions {
+    margin: 0.5rem 0;
+  }
+  &__button {
+    align-items: center;
+    appearance: none;
+    background-color: $primary;
+    border: none;
+    border-radius: $border-radius;
+    color: $light;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    gap: 0.5rem;
+    height: $button-height;
+    width: 100%;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+  &__group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  &__input {
+    border: 1px solid $border;
+    height: $button-height;
+    padding: 0.5rem;
+  }
+  &__mark {
+    color: $error;
+  }
+  &__message {
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    &--error {
+      color: $error;
+    }
+    &--info {
+      color: $primary;
+    }
+  }
+  &__textarea {
+    border: 1px solid $border;
+    height: $button-height * 2;
+    resize: none;
+    padding: 0.5rem;
+  }
+}
