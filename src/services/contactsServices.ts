@@ -1,6 +1,6 @@
 import { Contact, NewContact } from "../@types/appTypes";
 
-const API_URL = import.meta.env.VITE_APP_BACKEND_API_BASE_URL;
+const API_URL = process.env.REACT_APP_BACKEND_API_BASE_URL;
 
 export const getAllContacts = async (signal: AbortSignal): Promise<Contact[]> => {
     const myHeaders = new Headers();
