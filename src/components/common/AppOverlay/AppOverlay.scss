@@ -1,0 +1,18 @@
+@import "../../../variables";
+
+.overlay {
+  display: none;
+  &--show {
+    align-items: center;
+    background-color: $overlay;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+  }
+}
