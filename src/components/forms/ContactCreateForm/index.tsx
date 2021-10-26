@@ -27,7 +27,6 @@ export const ContactCreateForm = ({
     addContact({ name, photo, description }, signal)
       .then((response) => {
         const contactSaved = response;
-        console.log({ contactSaved });
         setHasErrorSaveContact(false);
         dispatch(addContactAction(contactSaved));
         resetForm();

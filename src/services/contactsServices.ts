@@ -113,7 +113,6 @@ export const addContact = async (newContact: NewContact, signal: AbortSignal): P
     myHeaders.append("Content-Type", "application/json");
 
     const newContactJSON = JSON.stringify({ ...newContact });
-    console.log(newContactJSON);
 
     const requestOptions: RequestInit = {
         method: 'POST',
