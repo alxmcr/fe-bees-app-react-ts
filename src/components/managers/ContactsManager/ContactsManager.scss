@@ -1,0 +1,11 @@
+@import "../../../variables";
+
+.contacts-manager {
+  margin-top: 1rem;
+  &__body {
+    background-color: $light;
+    display: flex;
+    justify-content: center;
+    min-height: $contacts-manager-body-height;
+  }
+}

@@ -1,0 +1,35 @@
+@import "../../../variables";
+
+.contacts-manager {
+  &__errors {
+    align-items: center;
+    display: flex;
+    height: 15rem;
+  }
+  &__header {
+    display: none;
+  }
+  &__message {
+    color: $primary;
+  }
+  &__table {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-manager {
+    &__header {
+      border-bottom: 1.5px solid $border;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      padding: 1rem;
+    }
+    &__subtitle {
+      font-weight: 800;
+      margin: 0;
+      padding: 0 1rem;
+      text-align: left;
+    }
+  }
+}

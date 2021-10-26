@@ -1,0 +1,65 @@
+@import "../../../variables";
+
+.contacts-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &__button {
+    align-items: center;
+    appearance: none;
+    background-color: $primary;
+    border: none;
+    border-radius: $border-radius;
+    color: $light;
+    display: flex;
+    font-weight: 600;
+    justify-content: center;
+    gap: 0.5rem;
+    height: $button-height;
+    width: 100%;
+    &:hover {
+      background-color: $dark;
+      color: $light;
+    }
+  }
+  &__icon {
+    fill: $light;
+    &--primary {
+      fill: $primary;
+    }
+  }
+  &__input {
+    border: none;
+    height: $input-search-height;
+    outline: none;
+    width: 100%;
+    &::placeholder {
+      color: $tertiary;
+    }
+  }
+  &__search {
+    align-items: center;
+    background-color: $light;
+    border-radius: $border-radius;
+    box-shadow: 0 3px 6px $shadow;
+    display: flex;
+    gap: 0.5rem;
+    padding: 0 0.75rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-actions {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    justify-content: space-between;
+    &__button {
+      width: $button-width;
+    }
+    &__input {
+      width: $input-search-width;
+    }
+  }
+}

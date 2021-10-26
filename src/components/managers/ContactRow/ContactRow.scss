@@ -1,0 +1,80 @@
+@import "../../../variables";
+
+.contacts-manager {
+  &__avatar {
+    border-radius: 50%;
+    height: $avatar-height;
+    object-fit: cover;
+    width: $avatar-width;
+  }
+  &__description {
+    width: 100%;
+    height: $card-contact-description-height;
+    margin: 0;
+    padding: 0;
+    white-space: pre-wrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  &__link {
+    color: $primary;
+    display: none;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  &__name {
+    color: $dark;
+    font-weight: 800;
+    margin: 0;
+    padding: 0;
+  }
+  &__row {
+    background-color: $light;
+    border-bottom: 1px solid $border;
+    color: $tertiary;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    &:hover {
+      a {
+        display: block;
+      }
+    }
+  }
+  &__side {
+    &:nth-child(1) {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contacts-manager {
+    &__description {
+      height: auto;
+    }
+    &__row {
+      background-color: $light;
+      border-bottom: 1px solid $border;
+      color: $tertiary;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 0.5rem;
+      padding: 0;
+    }
+    &__side {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+      padding: 1rem;
+      &:nth-child(2) {
+        border-left: 1px solid $border;
+      }
+    }
+  }
+}
