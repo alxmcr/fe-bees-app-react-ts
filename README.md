@@ -44,13 +44,18 @@ Iniciar el Frontend server
   npm run start
 ```
 
-Extra: Iniciar Backend server (Backend API)
+Extra: Iniciar [Backend server](https://github.com/Beetrack/frontend-test) (Backend API)
 
 ```bash
 cd frontend-test
 npm install
 npm run start
 ```
+
+Nota.- Es probable, que necesite:
+- Cambiar el puerto del backend de 3000 a 4000 (Conflicto de puertos entre React y API).
+- Instalar Nodemon para una rápida actualización de la base de datos.
+- Actualizar algunos links de imagenes, algunos links fuerón necesarios modificarlos.
  
 ## Environment Variables
 
