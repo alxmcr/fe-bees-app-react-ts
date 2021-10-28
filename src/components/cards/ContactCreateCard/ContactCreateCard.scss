@@ -3,7 +3,7 @@
 .card-contact {
   background-color: $secondary;
   box-sizing: content-box;
-  height: $card-height;
+  height: $card-create-contact-height;
   width: $card-create-contact-width;
   &__body {
     background-color: $secondary;
@@ -43,5 +43,11 @@
     justify-content: space-between;
     height: $card-header-height;
     padding: $padding-body-card;
+  }
+}
+
+@media screen and (min-width: 768px){
+  .card-contact {
+    width: $card-create-contact-width-md;
   }
 }
