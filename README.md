@@ -71,11 +71,14 @@ HTML, CSS, Sass, JavaScript, Typescript, React.js, and Redux.
 
 ## Screenshoots
 
-![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/desktop-version_b9coor.png)
+![Lista de Contactos - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/desktop-version_b9coor.png)
 
-![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version_bkm85c.png)
+![Create modal - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635391277/Portfolio/bees-app/screenshots/desktop-version-create-contact_rj4fsl.png)
 
-![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version-remove_hrnfbs.png)
+![Mobile Version - Lista de Contactos - Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version_bkm85c.png)
+
+![Mobile Version - Eliminar Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/mobile-version-remove_hrnfbs.png)
+
   
 ## Authors
 
