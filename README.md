@@ -1,21 +1,21 @@
 
-# Bees App
+# 🐝 Bees App
 
-Es una aplicación web que permita el registro, eliminación, búsqueda de contactos y paginación de resultados.
+Es una aplicación web que permita el registro, eliminación, búsqueda de contactos (bees 🐝) y paginación de resultados.
 
 ![App Screenshot](https://res.cloudinary.com/images-alex-projects/image/upload/v1635231627/Portfolio/bees-app/screenshots/desktop-version_b9coor.png)
 
 ## Features
 
 - Listar contactos
-- Listar contactos de forma paginada
+- Paginación de contactos
 - Registrar contactos
 - Eliminar contactos
+- Desktop y Mobile version
   
 ## Lessons Learned
 
-I learned and practice more about CSS, React.js, and React Hooks.
-Yo aprendí y practiqué más acerca de React.js, TypeScript, React Hooks, and Redux.
+Yo aprendí y practiqué más acerca de React.js, React Hooks, Redux (Reducers, Actions, Store), React Context y TypeScript.
 
   
 ## Run Locally
@@ -44,7 +44,7 @@ Iniciar el Frontend server
   npm run start
 ```
 
-Extra: Iniciar Backend server
+Extra: Iniciar Backend server (Backend API)
 
 ```bash
 cd frontend-test
@@ -83,6 +83,6 @@ HTML, CSS, Sass, JavaScript, Typescript, React.js, and Redux.
   
 ## Feedback
 
-If you have any feedback, please reach out to us at amcocarojas@gmail.com.
+If you have any feedback, please reach out to me at amcocarojas@gmail.com.
 
   
